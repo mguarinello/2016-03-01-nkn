@@ -19,7 +19,7 @@ instructor: ["Jen Hinds", "Marisa Guarinello"] # list of names like ["Kay McNult
 helper: ["David Vollmer", "Luke Sheneman", "Erich Seamon"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "sheneman@uidaho.edu"      # contact email address for workshop organizer, such as "grace@hopper.org"
 etherpad:   "http://example.com"      # optional (insert the URL for your Etherpad if you're using one)
-eventbrite:  "346862869052952YZ"     # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
+eventbrite:    # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
 <!--
   HEADER
@@ -29,24 +29,6 @@ eventbrite:  "346862869052952YZ"     # optional (insert the alphanumeric key for
   double quotation marks around the value, unless specified otherwise.
   And run 'tools/check' *before* committing to make sure that changes are good.
 -->
-
-<!--
-  EVENTBRITE
-
-  This block includes the Eventbrite registration widget if
-  'eventbrite' has been set in the header.  You can delete it if you
-  are not using Eventbrite, or leave it in, since it will not be
-  displayed if the 'eventbrite' field in the header is not set.
--->
-{% if page.eventbrite %}
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="248px"
-  scrolling="auto">
-</iframe>
-{% endif %}
 
 <h2 id="general">General Information</h2>
 
